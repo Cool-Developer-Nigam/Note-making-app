@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Login_And_Sign_up</string>
+    <string name="Welcome">welcome</string>
+    <string name="enter_the_description">Enter the description</string>
+    <string name="enter_your_title">Enter your title</string>
+    <string name="write_your_notes_here">Write your notes here</string>
+</resources>

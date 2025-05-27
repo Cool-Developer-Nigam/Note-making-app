@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "913619973517",
+    "project_id": "login-and-sign-up-25179",
+    "storage_bucket": "login-and-sign-up-25179.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:913619973517:android:0f40640dcdebf6b254b9c4",
+        "android_client_info": {
+          "package_name": "com.nigdroid.login_and_sign_up"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDMGHkhOptQSY5VyKFsuswlKP6SJAuV2sA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
