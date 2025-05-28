@@ -1,24 +1,28 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
-<uses-permission android:name="android.permission.INTERNET"/>
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
     <application
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
         android:fullBackupContent="@xml/backup_rules"
-        android:icon="@mipmap/ic_launcher"
-        android:label="@string/app_name"
-        android:roundIcon="@mipmap/ic_launcher_round"
+        android:icon="@drawable/maxresdefault"
+        android:label="notes Maker"
+        android:roundIcon="@drawable/maxresdefault"
         android:supportsRtl="true"
         android:theme="@style/Theme.Login_And_Sign_up"
         tools:targetApi="31">
+        <activity
+            android:name=".Forgot_passwordActivity"
+            android:exported="false" />
         <activity
             android:name=".AllNotesActivity"
             android:exported="false" />
         <activity
             android:name=".AddnoteActivity"
             android:exported="false" />
-        
         <activity
             android:name=".SignUpActivity"
             android:exported="false" />

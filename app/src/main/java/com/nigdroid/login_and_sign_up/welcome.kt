@@ -9,6 +9,7 @@ import android.text.SpannableString
 import android.text.style.ForegroundColorSpan
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
+import androidx.core.content.ContextCompat
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import com.nigdroid.login_and_sign_up.databinding.ActivityWelcomeBinding
@@ -18,6 +19,7 @@ class welcome : AppCompatActivity() {
         ActivityWelcomeBinding.inflate(layoutInflater)
 
     }
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
@@ -33,9 +35,12 @@ class welcome : AppCompatActivity() {
 
         //this code is to make the text with 2 colors
         val welcomeTxt="Welcome"
-val spannableString= SpannableString(welcomeTxt)
+        val spannableString= SpannableString(welcomeTxt)
         spannableString.setSpan(ForegroundColorSpan(Color.RED),0,5,0)
-        spannableString.setSpan(ForegroundColorSpan(Color.GRAY),5,welcomeTxt.length,0)
+        val goldenColor = ContextCompat.getColor(this, R.color.golden)
+
+        // Set the second part to golden_color
+        spannableString.setSpan(ForegroundColorSpan(goldenColor),5,welcomeTxt.length,0)
 
 
 

@@ -13,7 +13,7 @@ import com.nigdroid.login_and_sign_up.databinding.ActivitySignUpBinding
 
 class SignUpActivity : AppCompatActivity() {
 
-    private val binding: ActivitySignUpBinding by lazy{
+    private val binding: ActivitySignUpBinding by lazy {
         ActivitySignUpBinding.inflate(layoutInflater)
     }
 
@@ -24,7 +24,8 @@ class SignUpActivity : AppCompatActivity() {
         enableEdgeToEdge()
         setContentView(binding.root)
 
-//      this is to  intitialise firebase auth
+//      this is to  initialise firebase auth
+
         auth= FirebaseAuth.getInstance()
 
     binding.signIn.setOnClickListener {

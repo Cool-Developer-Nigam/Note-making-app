@@ -16,9 +16,7 @@ class LoginActivity : AppCompatActivity() {
     private val binding: ActivityLoginBinding by lazy {
         ActivityLoginBinding.inflate(layoutInflater)
     }
-
     private lateinit var auth: FirebaseAuth
-
 
 //    this code is written so that if you have done login then it will not show you the sign in screen
 
@@ -38,9 +36,7 @@ class LoginActivity : AppCompatActivity() {
         enableEdgeToEdge()
         setContentView(binding.root)
 
-
         auth= FirebaseAuth.getInstance()
-
 
         binding.signUp.setOnClickListener {
     startActivity(Intent(this, SignUpActivity::class.java))
@@ -52,18 +48,19 @@ class LoginActivity : AppCompatActivity() {
 if(usrname.isEmpty()||password.isEmpty()){
     Toast.makeText(this,"Please fill all the details", Toast.LENGTH_SHORT).show()
 }
+
 //This is to check whether the users email and password are as entered during sign up or not
 
 else{
     auth.signInWithEmailAndPassword(usrname,password)
         .addOnCompleteListener {
             task->if (task.isSuccessful){
-            Toast.makeText(this,"sign in sucessfull", Toast.LENGTH_SHORT).show()
+            Toast.makeText(this,"sign in successful", Toast.LENGTH_SHORT).show()
                 startActivity(Intent(this, MainActivity::class.java))
             finish()
             }
             else{
-            Toast.makeText(this,"sign in failed : ${task.exception?.message}", Toast.LENGTH_SHORT).show()
+            Toast.makeText(this,"Sign in failed : ${task.exception?.message}", Toast.LENGTH_SHORT).show()
         }
 
         }
