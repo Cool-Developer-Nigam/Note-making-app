@@ -44,6 +44,7 @@ class NoteAdapter(private val notes: List<NoteItem>,private val itemClickListene
     override fun getItemCount(): Int {
         return notes.size
     }
+
     class NoteViewHolder(val binding: NotesItemBinding) :
         RecyclerView.ViewHolder(binding.root) {
 
@@ -52,7 +53,6 @@ class NoteAdapter(private val notes: List<NoteItem>,private val itemClickListene
             binding.desTxt.text=note.description
         }
     }
-
 
 
 }

@@ -15,7 +15,7 @@
         android:theme="@style/Theme.Login_And_Sign_up"
         tools:targetApi="31">
         <activity
-            android:name=".Forgot_passwordActivity"
+            android:name=".ForgotPasswordActivity"
             android:exported="false" />
         <activity
             android:name=".AllNotesActivity"

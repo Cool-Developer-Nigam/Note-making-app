@@ -46,6 +46,7 @@ class AllNotesActivity : AppCompatActivity() , NoteAdapter.OnItemClickListener {
         databaseReference = FirebaseDatabase.getInstance().reference
         auth = FirebaseAuth.getInstance()
 
+
         val currentUser: FirebaseUser? = auth.currentUser
         currentUser?.let { user ->
             val noteReference: DatabaseReference =

@@ -50,6 +50,7 @@ class AddnoteActivity : AppCompatActivity() {
                     val noteItem= NoteItem(title,description,noteKey?:"")
 
                     if(noteKey!=null){
+
 //                        add notes to user notes
 
                         databaseReference.child("users").child(user.uid).child("notes").child(noteKey).setValue(noteItem)
